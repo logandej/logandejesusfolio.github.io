@@ -1,11 +1,11 @@
 ### your site title here
 
-title: Your Name
+title: Logan DE JESUS
 description: subtitle | affiliations | motto
 
-baseurl: /gradfolio #name of GitHub repository
-url: "" #custom url to be used instead of GitHub repository
-email: #
+baseurl: /logandejesusfolio.github.io #name of GitHub repository
+url: "https://logandej.github.io" #custom url to be used instead of GitHub repository
+email: "logan.dejesus1@gmail.com" #
 
 # Pagination
 paginate: 4
@@ -26,6 +26,8 @@ bluesky: "#"
 # Markdown
 highlighter: rouge
 markdown: kramdown
+
+encoding: utf-8
 
 # Tracker
 analytics:
@@ -70,3 +72,4 @@ plugins:
   - jekyll-paginate
   - jekyll-email-protect
   - jekyll-target-blank
+

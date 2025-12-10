@@ -3,7 +3,7 @@
 title: Logan DE JESUS
 description: subtitle | affiliations | motto
 
-baseurl: /logandejesusfolio.github.io #name of GitHub repository
+baseurl: /me #name of GitHub repository
 url: "custom" #custom url to be used instead of GitHub repository
 email: "logan.dejesus1@gmail.com" #
 

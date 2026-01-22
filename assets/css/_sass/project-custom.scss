@@ -1,7 +1,7 @@
 /* Project page styles - modern, centered, readable with animated background */
 
 // Variables (kept local to this file)
-$max-width: 80%;
+$max-width: 100%;
 $accent-1: #6c5ce7; // purple
 $accent-2: #00b894; // green
 $text: #e6eef8;
@@ -17,31 +17,53 @@ $muted: #9aa4b2;
 /* Container */
 .project-page {
   max-width: $max-width;
-  margin: 48px auto;
-  padding: 28px;
   background: rgba(255,255,255,0.02);
-  border-radius: 14px;
   box-shadow: 0 8px 30px rgba(2,6,23,0.6);
   backdrop-filter: blur(6px) saturate(120%);
   color: #e6eef8;
 }
 
 .project-header {
+  position: relative; // Ajouté pour positionner la vidéo
   text-align: center;
-  margin: auto;
-  margin-bottom: 22px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; // Évite que la vidéo dépasse
+}
+
+.header-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; // Équivalent de background-size: cover
+  z-index: -2;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Assombrit la vidéo pour mieux lire le texte */
+  z-index: -1;
 }
 
 .project-header h1 {
   font-size: 2.2rem;
-  margin : auto;
+  margin: 0 0 0.5rem 0;
   color: #fff;
 }
 
 .project-meta {
   color: $muted;
   font-size: 0.95rem;
-  margin-bottom: 12px;
+  margin: 0 0 1rem 0;
 }
 
 .project-description {
@@ -51,16 +73,53 @@ $muted: #9aa4b2;
   margin: 0 auto;
 }
 
+.project-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 3rem;
+  
+
+}
+
+article {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50px;
+}
+
+aside {
+ 
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+aside section div {
+  margin: 1.5rem;
+}
 
 
 
 /* === CAROUSEL GALLERY === */
 
 .project-gallery {
-  margin: 0;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  aspect-ratio: 16/9;
+  margin-bottom: 4rem;
+  width: 90%;
+  height: auto;
+
+
 }
 
 .project-gallery h2 {
@@ -73,17 +132,18 @@ $muted: #9aa4b2;
 .project-carousel {
   position: relative;
   width: 100%;
-  flex: 1;
+  aspect-ratio: 16/9;
   display: flex;
   flex-direction: column;
   min-height: 0;
+  flex-shrink: 0;
 }
 
 /* Row container - Position relative pour les boutons absolus */
 .project-carousel .row {
   position: relative;
-  flex: 1;
-  min-height: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,7 +181,7 @@ $muted: #9aa4b2;
   height: 100%;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 0;
 }
 
 .carousel-slide.active {
@@ -158,6 +218,7 @@ $muted: #9aa4b2;
   border: none;
 }
 
+
 /* Navigation buttons - POSITIONNÉS SUR L'IMAGE */
 .carousel-btn {
   position: absolute;
@@ -180,11 +241,11 @@ $muted: #9aa4b2;
 }
 
 .carousel-btn.prev {
-  left: -2rem;
+  left: -2.7rem;
 }
 
 .carousel-btn.next {
-  right: -2rem;
+  right: -2.7rem;
 }
 
 .carousel-btn:hover {
@@ -203,6 +264,7 @@ $muted: #9aa4b2;
 
 /* Indicators */
 .carousel-indicators {
+  margin-top: 0.175rem;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -272,10 +334,6 @@ $muted: #9aa4b2;
   .carousel-btn.next {
     right: 1rem;
   }
-  
-  .carousel-slide {
-    padding: 0.5rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -296,9 +354,5 @@ $muted: #9aa4b2;
   .indicator {
     width: 10px;
     height: 10px;
-  }
-  
-  .carousel-slide {
-    padding: 0.3rem;
   }
 }

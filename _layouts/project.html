@@ -1,25 +1,33 @@
 ---
 layout: default
 ---
+<!-- style="background-image: url('{{ site.baseurl }}{{ page.projectTileBgImg }}')" -->
+<div class="project-page"  >
+  <header class="project-header" >
 
-<article class="project-page">
-  <header class="project-header">
+     <!-- Vidéo en arrière-plan -->
+    <video class="header-video" autoplay loop muted playsinline>
+      <source src="{{ site.baseurl }}{{ page.projectVideoUrl }}" type="video/mp4">
+      <!-- Fallback sur l'image si la vidéo ne charge pas -->
+      <img src="{{ site.baseurl }}{{ page.projectTileBgImg }}" alt="">
+    </video>
+  
+  <!-- Overlay optionnel pour améliorer la lisibilité du texte -->
+  <div class="header-overlay"></div>
+    <div>
     <h1>{{ page.title }}</h1>
 
       <p class="project-meta"> {{ page.date | date: "%d %B %Y" }} — <em>{{ page.categorie }}</em></p>
     {% if page.description %}
       <p class="project-description">{{ page.description }}</p>
-    {% endif %}   
+    {% endif %}  
+    </div> 
   </header>
 
-  <div class="flex-container">
-    <section>
-      <h2>Contexte</h2>
-      <div>{{ page.context | markdownify }}</div>
-    </section>
 
   
-
+<div class="project-content">
+<article>
 
 {% assign all_media = page.videos | concat: page.images %}
 {% if all_media.size > 0 %}
@@ -63,27 +71,55 @@ layout: default
 {% endif %}
 
   {% if page.histoire %}
-  <section>
+  <section class="article-item">
+    <div>
       <h2>Histoire</h2>
       <div>{{ page.histoire | markdownify }}</div>
-    </section>
+    </div>
+  </section>
   {% endif %}
+
+   {% if page.infos %}
+  <section class="article-item">
+    <div>
+      <h2>Informations</h2>
+      <div>{{ page.infos | markdownify }}</div>
+    </div>
+  </section>
+  {% endif %}
+
+</article>
+
+
+
+<aside>
+
+  <section>
+    <div>
+    <h2>Contexte</h2>
+    <div>{{ page.context | markdownify }}</div>
+    </div>
+  </section>
 
   {% if page.notes %}
   <section>
+    <div>
     <h2>Notes techniques</h2>
     <div>{{ page.notes | markdownify }}</div>
+    </div>
   </section>
   {% endif %}
 
   {% if page.credits %}
   <section>
+    <div>
     <h2>Crédits</h2>
     <ul>
       {% for c in page.credits %}
         <li>{{ c }}</li>
       {% endfor %}
     </ul>
+    </div>
   </section>
   {% endif %}
 
@@ -91,8 +127,9 @@ layout: default
   <p class="project-link">Lien externe : <a href="{{ page.redirect }}" target="_blank">{{ page.redirect }}</a></p>
   {% endif %}
 
-  </div>
-</article>
+</aside>
+</div>
+</div>
 
 <script src="{{ '/assets/js/project-carousel.js' | relative_url }}"></script>
 

@@ -7,7 +7,7 @@ date: 2024-01-01
 categorie: professionnel
 description: "Jeu vidéo multijoueur dans un métavers sur les softs skills et le développement durable"
 context: |
-  Jeu vidéo réalisé dans le cadre de cours sur pour apprendre Unity, enseigné par Alain Cardona, en première année de formation Ingénieur en Informatique et Multimdédia au Cnam PACA.
+  Jeu vidéo réalisé dans le cadre de l'appel à projet "Citoyenneté Européenne" lancé par la Région Sud
 histoire: |
   Suite à une invasion étrangère, la planète Elysion subit de gros dégâts. Une seule personne arrive à survivre et on la retrouve 15 ans plus tard. Vous incarnez un personnage soif de vengeance qui va explorer, combattre et résoudre des énigmes avec un concept inédit : déplacer et orienter les structures qui vous entourent pour vous frayer un chemin vers la vérité.
 notes: |

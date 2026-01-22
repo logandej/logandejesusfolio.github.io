@@ -17,7 +17,7 @@ published: true
       
       {% for project in projects %}
 
-        <div class="projectTile" {% if cat == "universitaire" %}id="universitaire"{% endif %}>
+        <div class="projectTile" {% if cat == "universitaire" %}id="universitaire"{% endif %} style="background-image: url('{{ site.baseurl }}{{ project.projectTileBgImg }}')">
 
           {% assign link = project.redirect | default: project.url | prepend: site.baseurl | prepend: site.url %}
 

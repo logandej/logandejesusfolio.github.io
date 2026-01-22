@@ -17,8 +17,7 @@ histoire: |
 
   Le joueur devra convaincre les organisateurs et les critiques de s’intéresser à ces œuvres, en leur montrant que l’on peut trouver une œuvre belle ou déplaisante, mais que ce n’est pas l’objectif de l’art contemporain. Celui-ci vise plutôt à interpeller le spectateur, à faire émerger un questionnement, et à comprendre un contexte pour mieux découvrir l’œuvre et ce qu’elle transmet.”
 
-notes: |
- 
+infos : |
   Pour concevoir “Artreva, le Festival des Artmorphoses”, j’ai occupé le rôle de chef de projet tout en étant également le développeur principal. Je suis donc responsable de diriger l’équipe  et de l’accompagner tout au long du projet. Mon rôle principal consiste à :
   - Mener le projet et assurer son bon déroulement.
   - Planifier et organiser les différentes tâches en fonction de leurs interdépendances.
@@ -27,6 +26,8 @@ notes: |
   - Veiller à l’atteinte des objectifs définis par le client.
   - Organisation et Développement du Projet
   - Présenter l’avancement de l’application au client.
+
+notes: |
 
   Infos techniques :
   - Moteur : Unity

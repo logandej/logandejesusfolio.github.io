@@ -210,10 +210,10 @@ blockquote {
 $accent-1: #6c5ce7; // purple
 $accent-2: #00b894; // green
 
-.project-content {
-  color: #dbe7f7;
-  line-height: 1.6;
-}
+// .project-content {
+//   color: #dbe7f7;
+//   line-height: 1.6;
+// }
 
 .flex-container {
   display: flex;
@@ -222,28 +222,33 @@ $accent-2: #00b894; // green
   justify-content: center;
 }
 
-section {
-  z-index: 2;
-  margin: auto;
+aside section {
   margin-bottom: 4rem;
-  max-width: 80%;
-  width: 40%;
+  width: 90%;
   height: auto;
   background: rgba(255,255,255,0.1);
-  border: 0px solid rgba(255,255,255,0.85);
-  padding: 2.2rem;
   border-radius: 50px;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.45);
-  backdrop-filter: blur(8px);
+  //box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+  //backdrop-filter: blur(8px);
   color: $text-color;
   text-align: left;
 }
 
-section h2{
+aside section h2{
   margin-top: 0;
   color: $accent-1;
 }
 
+.article-item{
+    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.article-item h2{
+  text-align: center;
+}
 .bandeau {
   min-height: 90vh;
   /* Chemin relatif depuis assets/css/style.css compilé vers assets/images/... */
@@ -263,22 +268,22 @@ section h2{
 
 
   /* cadre central flouté */
-  #blur {
-    position: relative;
-    z-index: 2;
-    max-width: 900px;
-    width: 100%;
-    background: rgba(255,255,255,0.1);
-    border: 0px solid rgba(255,255,255,0.85);
-    padding: 2.2rem;
-    border-radius: 50px;
-    box-shadow: 0 12px 40px rgba(0,0,0,0.45);
-    backdrop-filter: blur(8px);
-    color: $text-color;
-    text-align: left;
+  // #blur {
+  //   position: relative;
+  //   z-index: 2;
+  //   max-width: 900px;
+  //   width: 100%;
+  //   background: rgba(255,255,255,0.1);
+  //   border: 0px solid rgba(255,255,255,0.85);
+  //   padding: 2.2rem;
+  //   border-radius: 50px;
+  //   box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+  //   //backdrop-filter: blur(8px);
+  //   color: $text-color;
+  //   text-align: left;
 
     
-  }
+  // }
 
   /* avatar placé sur la droite de la bannière (optionnel) */
   .bandeau__avatar {

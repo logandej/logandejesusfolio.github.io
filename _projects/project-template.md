@@ -4,12 +4,13 @@ layout: project
 permalink: /projects/titre-du-projet/
 published: true
 date: 2024-01-01
-categorie: pro
 description: "Brève description du projet (une ligne)"
 context: |
   Contexte : pourquoi ce projet a été réalisé, objectifs, public cible.
 notes: |
   Notes et détails techniques, langage utilisé, moteurs, contraintes...
+categorie: "universitaires"
+
 images:
   - /assets/images/project-screenshot1.png
   - /assets/images/project-screenshot2.png

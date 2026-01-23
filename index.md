@@ -10,7 +10,7 @@ published: true
 
 <div class="bandeau">
   <img class="bandeau__avatar" src="{{ page.profile.image | prepend: '/assets/images/' | relative_url }}">
-  <div id="blur">
+  <div class="section-item">
     <h1 class="bandeau-name">{{ site.name | default: "Logan De Jesus" }}</h1>
     <div class="bandeau-desc">{{ site.description | default: "pb" }}</div>
 
@@ -32,7 +32,7 @@ published: true
 
 </div>
 
-<section>
+<section class="section-item">
 	<h2>Mon Histoire</h2>
 		<div>
 			<ul>
@@ -44,7 +44,7 @@ published: true
 		</div>
 </section>
 
-<section>
+<section class="section-item">
 	<h2>Compétences Techniques</h2>
 		<div>
 			<ul>
@@ -57,7 +57,7 @@ published: true
 </section>
 
 
-<section>
+<section class="section-item">
 	<h2>Infos Rapides</h2>
 		<div>
 			<ul>
@@ -68,7 +68,8 @@ published: true
 		</div>
 </section>
 
-<section>
+<section class="section-item">
 <h2> Projets & Contact </h2>
 <p>Parcourez la section <a href="{{site.baseurl}}/Projects"> Projets </a> pour voir mes réalisations, et le <a href="{{site.baseurl}}/blogs">Blog</a> pour mes notes techniques et post-mortems. Si vous souhaitez me contacter ou collaborer, utilisez les liens en bas de page.</p>
+</section>
 

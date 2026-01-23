@@ -43,13 +43,29 @@ compress_html:
   profile: false
   startings: []
 
-#collection
+
+
+# Defaults automatiques par dossier
+defaults:
+  - scope:
+      path: "_projects/personnels"
+    values:
+      categorie: personnel
+  
+  - scope:
+      path: "_projects/professionnels"
+    values:
+      categorie: professionnel
+  
+  - scope:
+      path: "_projects/universitaires"
+    values:
+      categorie: universitaire
+
+
 collections:
   projects:
     output: true
-    permalink: /projects/:name/
-    
-
 
 sass:
   sass_dir: /assets/css/_sass

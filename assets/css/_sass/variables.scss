@@ -6,18 +6,21 @@ $base-line-height: 1.7;
 
 $spacing-unit:     30px;
 $light-gray: gray;
-$text-color:       #333;
-$background-color: #fdfdfd;
-$brand-color:      #7cbbc9;
-$projectbox-text:  #1e2126;
+$text-color:       #ffffff;
+$background-color: #000000;
+$brand-color:      #242424;
+$projectbox-text:  #9b9b9b;
 
 // Color scheme for light
-$body-bg: #F9F8F6;
-$projectbox: #EFE9E3;
-$projectbox2: #D9CFC7;
-$text-color: white;
+// $body-bg: #F9F8F6;
+ $projectbox: #1C4D8D;
+ $projectbox2: #4988C4;
+// $text-color: white;
 
 // Color scheme for dark modes
 $body-bg-dark: #23272d;
 $projectbox-dark: lighten(#98a0ac, 2%);
 $text-color-dark: #98a0ac;
+
+// Asset URLs
+$unity-logo: '/assets/images/profileicons/1logoUnity.png';
